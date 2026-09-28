@@ -4,11 +4,11 @@ Download the latest [Windows installer and Android APK](https://github.com/kayde
 
 ## Install
 
-1. Install the Windows setup executable and Android APK from the same release. The Windows installer is unsigned, so Windows may show a publisher warning.
+1. Install the Windows setup executable and Android APK from the same release. The Windows installer is unsigned, so Windows may show a publisher warning. **Android 0.5.5 requires a one-time uninstall of 0.5.3 or older** because the original signing key was lost. Uninstalling clears the app's device identity and pairings; pair again after installing 0.5.5. Future releases will use the 0.5.5 signing key for in-app updates.
 2. Install and connect Tailscale on the phone and each Windows PC for access between different locations. Set **Relay address** to `tailscale` in the Windows app. Keep the PC powered on, signed in, and connected.
 3. Pair each device once with a QR or pasted invite. On the same Wi-Fi, the Android app can also discover nearby PCs. Pairing requires approval on the PC.
 4. Use **Home** on the owner phone to choose trusted members. Each PC approves its first Home invitation, then can send files to the group.
 
-Downloads are verified with the SHA-256 digest shown on each GitHub release asset. The Android APK is currently signed with the same development key as previous Kydora Home APKs. Keep that key for future updates. Transfers use device identities and end-to-end encryption; Tailscale provides network reachability.
+Downloads are verified with the SHA-256 digest shown on each GitHub release asset. The Android 0.5.5 release key is stored privately and used for future updates. Transfers use device identities and end-to-end encryption; Tailscale provides network reachability.
 
 Copyright © 2026 kayden-pixel. All rights reserved.
